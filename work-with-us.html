@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco-Market | Work With Us</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="sub-header">
+      <nav class="nav">
+        <h1>Eco-Market</h1>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="comprar.html">Comprar</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="work-with-us.html" aria-current="page">Work With Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <h3>Work With Us</h3>
+        <div class="work-content">
+          <article>
+            <h4>¿Cómo es trabajar acá?</h4>
+            <ul>
+              <li>Modalidad híbrida con flexibilidad horaria.</li>
+              <li>Planes de formación en sostenibilidad.</li>
+              <li>Equipos colaborativos y mentoría.</li>
+              <li>Beneficios en productos ecológicos.</li>
+            </ul>
+          </article>
+          <article>
+            <h4>¿Cómo te anotás?</h4>
+            <ol>
+              <li>Completá el formulario.</li>
+              <li>Adjuntá CV y carta breve de motivación.</li>
+              <li>Contanos tu propuesta de impacto ambiental.</li>
+              <li>Te contactamos dentro de 7 días hábiles.</li>
+            </ol>
+          </article>
+        </div>
+
+        <form class="apply-form" id="apply-form">
+          <label>Nombre completo <input type="text" name="name" required /></label>
+          <label>Email <input type="email" name="email" required /></label>
+          <label>Puesto de interés <input type="text" name="role" required /></label>
+          <label>Motivación <textarea name="motivation" rows="4" required></textarea></label>
+          <button type="submit" class="btn-primary">Enviar postulación</button>
+          <p id="apply-message" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer><p>© 2026 Eco-Market.</p></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
