@@ -22,25 +22,15 @@
 
     <main>
       <section class="section">
-        <h3>Carrito</h3>
-        <p>Pagá tus productos directamente en Mercado Pago.</p>
-
+        <h3>Artículos del carrito</h3>
+        <p>Revisá lo que llevás antes de finalizar tu compra.</p>
         <div class="cart-box">
           <ul id="cart-items"></ul>
           <div class="cart-summary">
-            <p>Total: <strong id="cart-total">ARS 0</strong></p>
-            <button id="clear-cart" class="btn-secondary" type="button">Vaciar carrito</button>
+            <p>Total: <strong id="cart-total">USD 0</strong></p>
+            <button id="clear-cart" class="btn-secondary">Vaciar carrito</button>
           </div>
         </div>
-
-        <form id="checkout-form" class="checkout-form">
-          <label>
-            Email para el pago (opcional)
-            <input id="payer-email" type="email" placeholder="tuemail@ejemplo.com" />
-          </label>
-          <button id="pay-button" class="btn-primary" type="submit">Pagar con Mercado Pago</button>
-          <p id="checkout-message" role="status" aria-live="polite"></p>
-        </form>
       </section>
     </main>
 
