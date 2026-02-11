@@ -1,0 +1,203 @@
+:root {
+  --green-700: #14532d;
+  --green-600: #166534;
+  --green-100: #dcfce7;
+  --teal-50: #f0fdfa;
+  --gray-800: #1f2937;
+  --gray-600: #4b5563;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  line-height: 1.5;
+  color: var(--gray-800);
+  background: #f7faf7;
+}
+
+.hero {
+  background: linear-gradient(150deg, var(--green-100), var(--teal-50));
+  padding: 1.2rem clamp(1rem, 3vw, 3rem) 2.5rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav h1 {
+  margin: 0;
+  color: var(--green-700);
+}
+
+.nav ul {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--gray-800);
+  font-weight: 600;
+}
+
+.hero-content {
+  max-width: 720px;
+  margin-top: 2rem;
+}
+
+.tagline {
+  font-weight: 700;
+  color: var(--green-600);
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-add {
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.65rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-primary,
+.btn-add {
+  background: var(--green-600);
+  color: var(--white);
+}
+
+.btn-primary:hover,
+.btn-add:hover {
+  background: var(--green-700);
+}
+
+.btn-secondary {
+  background: #e5e7eb;
+  color: var(--gray-800);
+}
+
+main {
+  padding: clamp(1rem, 2vw, 2rem) clamp(1rem, 3vw, 3rem);
+}
+
+.section {
+  background: var(--white);
+  border-radius: 1rem;
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.05);
+}
+
+.section h3 {
+  margin-top: 0;
+  color: var(--green-700);
+}
+
+.product-grid,
+.team-grid,
+.work-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.product-card,
+.team-grid article,
+.work-content article {
+  border: 1px solid #d1fae5;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  background: #fafdfa;
+}
+
+.product-footer {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-box {
+  border: 1px solid #d1d5db;
+  border-radius: 0.8rem;
+  padding: 1rem;
+}
+
+#cart-items {
+  margin: 0;
+  padding-left: 1.2rem;
+  min-height: 1.5rem;
+}
+
+#cart-items li {
+  margin-bottom: 0.45rem;
+}
+
+
+.remove-btn {
+  margin-left: 0.5rem;
+  border: none;
+  border-radius: 0.45rem;
+  background: #dc2626;
+  color: white;
+  padding: 0.2rem 0.55rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.remove-btn:hover {
+  background: #b91c1c;
+}
+
+.cart-summary {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.apply-form {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.apply-form label {
+  display: grid;
+  gap: 0.3rem;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  padding: 0.65rem;
+  font: inherit;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--gray-600);
+}
+
+@media (max-width: 640px) {
+  .nav ul {
+    flex-wrap: wrap;
+  }
+}
